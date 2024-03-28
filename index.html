@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flight</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="head">
+                    <i class="fa-solid fa-plane-departure" style="padding: 11px; color: skyblue; font-size: 1.4rem;"></i>
+                    <h3>Google Flights</h3>
+                </div>
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid bg-white">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Round Trip</a>
+                        </li>
+                       <li class="nav-item">
+                          <a class="nav-link text-black" href="#">Oneway</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Multi-City</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+                  <div class="continer">
+                    <form action="/action_page.php">
+                        <div class="mb-3 mt-3">
+                          <label class="form-label">Destination Details:</label>
+                          <input type="text" class="form-control"  placeholder="Travel from" name="travel">
+                          <input type="text" class="form-control" style="margin-top: 20px;" placeholder="Travel to" name="travel">
+                        </div>
+                        
+                        <div class="row1">
+                            <div class="col-sm-6">
+                                <label class="form-label">Travel Dates</label>
+                                <input type="date" class="form-control"  placeholder="" name="travel">
+                                <input type="date" class="form-control" style="margin-top: 20px;"  placeholder="" name="travel">
+
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label">Passenger Dates</label>
+                                <input type="number" type="text" class="form-control"  placeholder="Adult" name="Passenger">
+                                <input type="text" class="form-control" style="margin-top: 20px;"  placeholder="Economy" name="Passenger">
+                            </div>
+                        </div>
+
+                        <div class="row2">
+                            <div class="col-sm-6">
+                                <label class="form-label" style="margin-top: 20px;">Travel Stops</label>
+                                <input type="number" type="text" class="form-control"  placeholder="Any Stops" name="Passenger">
+                            </div>
+
+                            
+                            <div class="col-sm-6">
+                                <label class="form-label" style="margin-top: 20px;">Travel Time</label>
+                                <input type="number" type="text" class="form-control"  placeholder="Any Time" name="Passenger">
+                            </div>
+                        </div>
+
+                        <div class="row3">
+                            <label class="form-label" style="margin-top: 30px;">Duration</label>
+                            <input type="range">
+                        </div>
+
+                      </form> 
+                  </div>
+
+            </div>
+            <div class="col-sm-8">
+                <h1>It's a big World. Exploring it just got Easier</h1>
+                
+                <div class="container1">
+                    <button type="button" class="btn btn-primary">GET FLIGHTS</button>                    
+                    <button ype="button" class="btn text-white" > <b> WATCH THE VIDEO</b></button>
+                  </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
